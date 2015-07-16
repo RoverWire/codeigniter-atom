@@ -1,12 +1,12 @@
 '*':
   'Codeigniter Helper':
     'prefix':'cihelper'
-    'body': """
-      if (! function_exists('${1:function_name}'))
-      {
-      	function $1(${2:\$param${3: = ''}})
-      	{
-      		$0
-      	}
-      }
-    """
+    'body': '''
+              if (! function_exists('${1:function_name}'))
+              {
+              	function $1(${2:\$param${3: = ''}})
+              	{
+              		$0
+              	}
+              }
+            '''

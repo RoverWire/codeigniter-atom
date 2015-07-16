@@ -1,0 +1,36 @@
+'.source.php':
+  'Cache Information':
+    'prefix': 'cicacheinfo'
+    'body': '''
+      \$this->cache->${1:${2:driver}->}cache_info();
+    '''
+  'Cache Clean':
+    'prefix': 'cicacheclean'
+    'body': '''
+      \$this->cache->${1:${2:driver}->}clean();
+    '''
+  'Cache Delete':
+    'prefix': 'cicachedel'
+    'body': '''
+      \$this->cache->${1:${2:driver}->}delete(${3:'${4:cache_item_id}'});
+    '''
+  'Cache Get':
+    'prefix': 'cicacheget'
+    'body': '''
+      \$this->cache->${1:${2:driver}->}get(${3:'${4:str_id}'});
+    '''
+  'Cache Get Metadata':
+    'prefix': 'cicachegetmeta'
+    'body': '''
+      \$this->cache->${1:${2:driver}->}get_metadata(${3:'${4:cached_item}'});
+    '''
+  'Cache Is Supported':
+    'prefix': 'cicacheissup'
+    'body': '''
+      \$this->cache->${1:${2:driver}->}is_supported(${3:'${4:str_driver}'});
+    '''
+  'Cache Save':
+    'prefix': 'cicachesave'
+    'body': '''
+      \$this->cache->${1:${2:driver}->}save(${3:'${4:cache_item_id}'}, ${5:'${6:data_to_cache}'}${7:, ${8:60}});
+    '''

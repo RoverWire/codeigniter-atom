@@ -1,0 +1,61 @@
+'.source.php':
+  'Load Add Package':
+    'prefix': 'ciloadadd'
+    'body': '''
+            \$this->load->add_package_path(${1:'${2:path}'});
+            '''
+  'Load Config File':
+    'prefix': 'ciloadconf'
+    'body': '''
+            \$this->load->config(${1:'${2:file_name}'});
+            '''
+  'Load Database':
+    'prefix': 'ciloaddb'
+    'body': '''
+            \$this->load->database($1);
+            '''
+  'Load File':
+    'prefix': 'ciloadfile'
+    'body': '''
+            \$this->load->file(${1:'${2:file_name}'});
+            '''
+  'Load Get Var':
+    'prefix': 'ciloadgetvar'
+    'body': '''
+            \$this->load->get_var(${1:$key});
+            '''
+  'Load Helper':
+    'prefix': 'ciloadhel'
+    'body': '''
+            \$this->load->helper(${1:'${2:file_name}'});
+            '''
+  'Load Language File':
+    'prefix': 'ciloadlang'
+    'body': '''
+            \$this->load->language(${1:'${2:file_name}'});
+            '''
+  'Load Library':
+    'prefix': 'ciloadlib'
+    'body': '''
+            \$this->load->library(${1:'${2:file_name}'}${3:, ${4:\$config}${5:, ${6:'${7:object_name}'}}});
+            '''
+  'Load Model':
+    'prefix': 'ciloadmod'
+    'body': '''
+            \$this->load->model(${1:'${2:model_name}'}${3:, ${4:'${5:model_alias}'}});
+            '''
+  'Load Remove Package':
+    'prefix': 'ciloadrem'
+    'body': '''
+            \$this->load->remove_package_path(${1:'${2:path}'});
+            '''
+  'Load Get Vars':
+    'prefix': 'ciloadget'
+    'body': '''
+            \$this->load->vars(${1:$array});
+            '''
+  'Load View':
+    'prefix': 'ciloadview'
+    'body': '''
+            \$this->load->view(${1:'${2:view_name}'}${3:, ${4:\$data}${5:, ${6:TRUE}}});
+            '''

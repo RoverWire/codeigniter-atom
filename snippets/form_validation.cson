@@ -1,0 +1,53 @@
+'.source.php':
+  'Validation Conf Array':
+    'prefix': 'ciformvalconf'
+    'body': '''
+            \$${1:conf} = array(
+            				array(
+            					'field' => '$2',
+            					'label' => '$3',
+            					'rules' => '$4'
+            				)$0
+            			);
+
+            \$this->form_validation->set_rules(\$$1);
+            '''
+  'Validation Form Error':
+    'prefix': 'ciformerr'
+    'body': '''
+            form_error('${1:field}'${2:, '${3:<div class="error">}', '${4:</div>}'});
+            '''
+  'Validation Rule Array':
+    'prefix': 'ciformvalrule'
+    'body': '''
+            array(
+            	'field' => '$1',
+            	'label' => '$2',
+            	'rules' => '$3'
+            )$0
+            '''
+  'Validation Run':
+    'prefix': 'ciformvalrun'
+    'body': '''
+            \$this->form_validation->run()${1:;}
+            '''
+  'Validation Set Delimiters':
+    'prefix': 'ciformvaldel'
+    'body': '''
+            \$this->form_validation->set_error_delimiters('${1:<div class="error">}', '${2:</div>}');
+            '''
+  'Validation Message':
+    'prefix': 'ciformvalmes'
+    'body': '''
+            \$this->form_validation->set_message(${1:'${2:field}', }'${3:message}');
+            '''
+  'Validation Set Rules':
+    'prefix': 'ciformvalset'
+    'body': '''
+            \$this->form_validation->set_rules('${1:field}', '${2:label}', '${3:required|trim}');
+            '''
+  'Validation Errors':
+    'prefix': 'civalerr'
+    'body': '''
+            validation_errors(${1:'${2:<div class="error">}', '${3:</div>}'});
+            '''

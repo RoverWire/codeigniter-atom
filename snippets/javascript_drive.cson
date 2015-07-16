@@ -1,0 +1,61 @@
+'.source.php':
+  'jQuery Animate':
+    'prefix': 'cijqanimate'
+    'body': '''
+            \$this->jquery->animate(${1:'${2:target}'},${3:\$arr_params}${4:, ${5:\$optional_speed}${6:, ${7:\$optional_extra_info}}});
+            '''
+  'jQuery Corner':
+    'prefix': 'cijqcorner'
+    'body': '''
+            \$this->jquery->corner(${1:'${2:target}'}, ${3:'${4:corner style}'});
+            '''
+  'jQuery Effect':
+    'prefix': 'cijqeffect'
+    'body': '''
+            \$this->jquery->effect(${1:'${2:plugin_name}'});
+            '''
+  'jQuery Event':
+    'prefix': 'cijqevent'
+    'body': '''
+            \$this->jquery->${1:event}(${2:'$3{element_path}'}, ${4:code_to_run()});
+            '''
+  'jQuery Fade In':
+    'prefix': 'cijqfadein'
+    'body': '''
+            \$this->jquery->fadeIn(${1:'${2:target}'}${3:, ${4:\$optional_speed}${5:, ${6:\$optional_extra_info}}});
+            '''
+  'jQuery Fade Out':
+    'prefix': 'cijqfadeout'
+    'body': '''
+            \$this->jquery->fadeOut(${1:'${2:target}'}${3:, ${4:\$optional_speed}${5:, ${6:\$optional_extra_info}}});
+            '''
+  'jQuery Hide':
+    'prefix': 'cijqhide'
+    'body': '''
+            \$this->jquery->hide(${1:'${2:target}'}${3:, ${4:\$optional_speed}${5:, ${6:\$optional_extra_info}}});
+            '''
+  'jQuery Show':
+    'prefix': 'cijqshow'
+    'body': '''
+            \$this->jquery->show(${1:'${2:target}'}${3:, ${4:\$optional_speed}${5:, ${6:\$optional_extra_info}}});
+            '''
+  'jQuery Slide Down':
+    'prefix': 'cijqslidedown'
+    'body': '''
+            \$this->jquery->slideDown(${1:'${2:target}'}${3:, ${4:\$optional_speed}${5:, ${6:\$optional_extra_info}}});
+            '''
+  'jQuery Slide Toogle':
+    'prefix': 'cijqslidetoogle'
+    'body': '''
+            \$this->jquery->slideToogle(${1:'${2:target}'}${3:, ${4:\$optional_speed}${5:, ${6:\$optional_extra_info}}});
+            '''
+  'jQuery Slide Up':
+    'prefix': 'cijqslideup'
+    'body': '''
+            \$this->jquery->slideUp(${1:'${2:target}'}${3:, ${4:\$optional_speed}${5:, ${6:\$optional_extra_info}}});
+            '''
+  'jQuery Toogle':
+    'prefix': 'cijqtoog'
+    'body': '''
+            \$this->jquery->toogle(${1:'${2:target}'});
+            '''

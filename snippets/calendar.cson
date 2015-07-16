@@ -1,0 +1,6 @@
+'.source.php':
+  'Calendar Generate':
+    'prefix': 'cicalgen'
+    'body': '''
+      \$this->calendar->generate($1);
+    '''

@@ -1,0 +1,41 @@
+'.source.php':
+  'Cart Contents':
+    'prefix': 'cicart'
+    'body': '''
+      \$this->cart->contents();
+    '''
+  'Cart Destroy':
+    'prefix': 'cicartdes'
+    'body': '''
+      \$this->cart->destroy();
+    '''
+  'Cart Has Options':
+    'prefix': 'cicarthas'
+    'body': '''
+      \$this->cart->has_options(${1:\$rowid});
+    '''
+  'Cart Insert':
+    'prefix': 'cicartin'
+    'body': '''
+      \$this->cart->insert($1);
+    '''
+  'Cart Product Options':
+    'prefix': 'cicartopt'
+    'body': '''
+      \$this->cart->product_options(${1:\$rowid});
+    '''
+  'Cart Total':
+    'prefix': 'cicarttotal'
+    'body': '''
+      \$this->cart->total();
+    '''
+  'Cart Total Items':
+    'prefix': 'cicarttotali'
+    'body': '''
+      \$this->cart->total_items();
+    '''
+  'Cart Update':
+    'prefix': 'cicartup'
+    'body': '''
+      \$this->cart->update($1);
+    '''

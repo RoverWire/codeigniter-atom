@@ -1,21 +1,21 @@
 '*':
   'Codeigniter Model':
     'prefix':'cimodel'
-    'body': """
-      <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+    'body': '''
+              <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-      class ${1:ModelName} extends ${2:${3:CI}_Model} {
+              class ${1:ModelName} extends ${2:${3:CI}_Model} {
 
-      	${4:${5:public} ${6:\$variable};}
+              	${4:${5:public} ${6:\$variable};}
 
-      	public function __construct()
-      	{
-      		parent::__construct();
-      		$0
-      	}
+              	public function __construct()
+              	{
+              		parent::__construct();
+              		$0
+              	}
 
-      }
+              }
 
-      /* End of file ${1:ModelName}.php */
-      /* Location: ./application/models/${1:ModelName}.php */
-    """
+              /* End of file ${1:ModelName}.php */
+              /* Location: ./application/models/${1:ModelName}.php */
+            '''

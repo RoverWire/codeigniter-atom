@@ -1,78 +1,66 @@
 '.source.php':
   'Codeigniter Anchor':
     'prefix':'cianchor'
-    'body': """
-      anchor(${1:'${2:segments}'${3:, '${4:text}'${5:, ${6:attribs}}}});
-     """
-
+    'body': '''
+             anchor(${1:'${2:segments}'${3:, '${4:text}'${5:, ${6:attribs}}}});
+            '''
   'Codeigniter Anchor Popup':
     'prefix':'cianchorpop'
-    'body': """
-      anchor_popup(${1:'${2:segments}'${3:, '${4:text}'${5:, ${6:attribs}}}});
-     """
-
+    'body': '''
+             anchor_popup(${1:'${2:segments}'${3:, '${4:text}'${5:, ${6:attribs}}}});
+            '''
   'Codeigniter Autolink':
     'prefix':'ciautolink'
-    'body': """
-      auto_link(${1:'${2:string}'});
-     """
-
+    'body': '''
+             auto_link(${1:'${2:string}'});
+            '''
   'Codeigniter Base URL':
     'prefix':'cibaseurl'
-    'body': """
-      base_url(${1:'${2:string}'});
-     """
-
+    'body': '''
+             base_url(${1:'${2:string}'});
+            '''
   'Codeigniter Current URL':
     'prefix':'cicurrent'
-    'body': """
-      current_url();
-     """
-
+    'body': '''
+             current_url();
+            '''
   'Codeigniter Index Page':
     'prefix':'ciindex'
-    'body': """
-      index_page();
-     """
-
+    'body': '''
+             index_page();
+            '''
   'Codeigniter Mail To Anchor':
     'prefix':'cimailtoan'
-    'body': """
-      mailto(${1:'${2:me@my-site.com}'${3:, '${4:text}'${5:, ${6:\$attribs}}}});
-     """
-
+    'body': '''
+             mailto(${1:'${2:me@my-site.com}'${3:, '${4:text}'${5:, ${6:\$attribs}}}});
+            '''
   'Codeigniter Prepend URL':
     'prefix':'ciprepurl'
-    'body': """
-      prep_url(${1:'${2:string}'});
-     """
-
+    'body': '''
+             prep_url(${1:'${2:string}'});
+            '''
   'Codeigniter Redirect':
     'prefix':'ciredir'
-    'body': """
-      redirect(${1:'${2:route}'}${3:, '${4:refresh}'});
-     """
-
+    'body': '''
+             redirect(${1:'${2:route}'}${3:, '${4:refresh}'});
+            '''
   'Codeigniter Safe Mail To':
     'prefix':'cisafemail'
-    'body': """
-      safe_mailto(${1:'${2:me@my-site.com}'${3:, '${4:text}'${5:, ${6:\$attribs}}}});
-     """
-
+    'body': '''
+             safe_mailto(${1:'${2:me@my-site.com}'${3:, '${4:text}'${5:, ${6:\$attribs}}}});
+            '''
   'Codeigniter Site URL':
     'prefix':'cisiteurl'
-    'body': """
-      site_url(${1:'${2:string}'});
-     """
-
+    'body': '''
+             site_url(${1:'${2:string}'});
+            '''
   'Codeigniter URI string':
     'prefix':'ciuristr'
-    'body': """
-      uri_string();
-     """
-
+    'body': '''
+             uri_string();
+            '''
   'Codeigniter URL Title':
     'prefix':'ciurltitle'
-    'body': """
-      url_title(${1:'${2:string}'}${3:, '${4:dash}'${5:, ${6:TRUE}}});
-     """
+    'body': '''
+             url_title(${1:'${2:string}'}${3:, '${4:dash}'${5:, ${6:TRUE}}});
+            '''

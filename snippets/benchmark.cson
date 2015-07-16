@@ -1,0 +1,16 @@
+'.source.php':
+  'Elapsed Time':
+    'prefix': 'cibenchtime'
+    'body': '''
+      \$this->benchmark->elapsed_time(${1:'$2', '$3'});
+    '''
+  'Benchmark Mark':
+    'prefix': 'cibenchmark'
+    'body': '''
+      \$this->benchmark->mark(${1:'${2:string_mark}'});
+    '''
+  'Memory Usage':
+    'prefix': 'cibenchmem'
+    'body': '''
+      \$this->benchmark->memory_usage();
+    '''

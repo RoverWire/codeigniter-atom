@@ -1,15 +1,15 @@
 '*':
   'Codeigniter Git Ignore':
     'prefix':'cigitignore'
-    'body': """
-      */config/development
-      */config/testing
-      */config/production
-      */logs/log-*.php
-      */logs/!index.html
-      */cache/*
-      */cache/!index.html
-      */cache/!.htaccess
-      **/.DS_Store
-      **/Thumbs.db
-     """
+    'body': '''
+             */config/development
+             */config/testing
+             */config/production
+             */logs/log-*.php
+             */logs/!index.html
+             */cache/*
+             */cache/!index.html
+             */cache/!.htaccess
+             **/.DS_Store
+             **/Thumbs.db
+            '''

@@ -1,0 +1,66 @@
+'.source.php':
+  'E-mail Attach File':
+    'prefix': 'cimailatt'
+    'body': '''
+      ${1:\$this->email}->attach(${2:'${3:/path/to/file}'});
+    '''
+  'E-mail Blind Carbon Copy':
+    'prefix': 'cimailbcc'
+    'body': '''
+      ${1:\$this->email}->bcc(${2:'${3:you@example.com}'});
+    '''
+  'E-mail Carbon Copy':
+    'prefix': 'cimailcc'
+    'body': '''
+      ${1:\$this->email}->cc(${2:'${3:you@example.com}'});
+    '''
+  'E-mail Clear':
+    'prefix': 'cimailclear'
+    'body': '''
+      ${1:\$this->email}->clear();
+    '''
+  'E-mail From':
+    'prefix': 'cimailfrom'
+    'body': '''
+      ${1:\$this->email}->from(${2:'${3:you@example.com}'}, ${4:'${5:Your Name}'});
+    '''
+  'E-mail Initialize':
+    'prefix': 'cimailinit'
+    'body': '''
+      ${1:\$this->email}->initialize(${2:\$config});
+    '''
+  'E-mail Message':
+    'prefix': 'cimailmsg'
+    'body': '''
+      ${1:\$this->email}->message(${2:'${3:you@example.com}'});
+    '''
+  'E-mail Print Debugger':
+    'prefix': 'cimailprint'
+    'body': '''
+      ${1:\$this->email}->print_debugger();
+    '''
+  'E-mail Reply To':
+    'prefix': 'cimailreply'
+    'body': '''
+      ${1:\$this->email}->reply_to(${2:'${3:you@example.com}'}, ${4:'${5:Your Name}'});
+    '''
+  'E-mail Send':
+    'prefix': 'cimailsend'
+    'body': '''
+      ${1:\$this->email}->send();
+    '''
+  'E-mail Set Alternative Message':
+    'prefix': 'cimailaltmsg'
+    'body': '''
+      ${1:\$this->email}->set_alt_message(${2:'${3:you@example.com}'});
+    '''
+  'E-mail Subject':
+    'prefix': 'cimailsub'
+    'body': '''
+      ${1:\$this->email}->subject(${2:'${3:mail subject}'});
+    '''
+  'E-mail To':
+    'prefix': 'cimailto'
+    'body': '''
+      ${1:\$this->email}->to(${2:'${3:you@example.com}'});
+    '''

@@ -1,0 +1,67 @@
+'.source.php':
+  'Input Get':
+    'prefix': 'ciinputget'
+    'body': '''
+            \$this->input->get(${1:'${2:data}'}${3:, ${4:TRUE}});
+            '''
+  'Input Cookie':
+    'prefix': 'ciinputgetco'
+    'body': '''
+            \$this->input->cookie(${1:'${2:cookie}'}${3:, ${4:TRUE}});
+            '''
+  'Input Get / Post':
+    'prefix': 'ciinputgetp'
+    'body': '''
+            \$this->input->get_post(${1:'${2:data}'}${3:, ${4:TRUE}});
+            '''
+  'Input Get Request Header':
+    'prefix': 'ciinputgetreq'
+    'body': '''
+            \$this->input->get_request_header();
+            '''
+  'Input Ip':
+    'prefix': 'ciinputip'
+    'body': '''
+            \$this->input->ip_address();
+            '''
+  'Input Is CLI Request':
+    'prefix': 'ciinputiscli'
+    'body': '''
+            \$this->input->is_cli_request();
+            '''
+  'Input POST':
+    'prefix': 'ciinputpost'
+    'body': '''
+            \$this->input->post(${1:'${2:data}'}${3:, ${4:TRUE}});
+            '''
+  'Input Request Headers':
+    'prefix': 'ciinputreq'
+    'body': '''
+            \$this->input->request_headers();
+            '''
+  'Input Server':
+    'prefix': 'ciinputserv'
+    'body': '''
+            \$this->input->server(${1:'${2:data}'}${3:, ${4:TRUE}});
+            '''
+  'Input Set Cookie':
+    'prefix': 'ciinputsetco'
+    'body': '''
+            \$this->input->set_cookie(${1:\$name}${2:, ${3:\$value}, ${4:\$expire}, ${5:\$domain}, ${6:\$path}, ${7:\$prefix}, ${8:\$secure}});
+            '''
+  'Input User Agent':
+    'prefix': 'ciinputuser'
+    'body': '''
+            \$this->input->user_agent();
+            '''
+  'Input Valid Ip':
+    'prefix': 'ciinputvalip'
+    'body': '''
+            \$this->input->valid_ip(${1:'${2:data}'});
+            '''
+'.undefined':
+  'Input Is AJAX Request':
+    'prefix': 'ciinputisajax'
+    'body': '''
+            \$this->input->is_ajax_request();
+            '''

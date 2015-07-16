@@ -1,11 +1,11 @@
 '*':
   'Codeigniter Snippet':
     'prefix':'cisnippet'
-    'body': """
-      ${1:'${2:.source.php}':}
-        'Codeigniter ${3:Snippet}':
-          'prefix':'ci${4:trigger}'
-          'body': \"\"\"
-            $0
-           \"\"\"
-    """
+    'body': '''
+              ${1:'${2:.source.php}':}
+                'Codeigniter ${3:Snippet}':
+                  'prefix':'ci${4:trigger}'
+                  'body': \'\'\'
+                    $0
+                   \'\'\'
+            '''

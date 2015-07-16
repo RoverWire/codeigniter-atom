@@ -1,144 +1,123 @@
 '.source.php':
   'Codeigniter Drop Down':
     'prefix':'ciformdd'
-    'body': """
-      form_dropdown(${6:'${1:variable}', ${3:'${2:options}'}, ${5:'${4:selected}'}});
-     """
-
+    'body': '''
+             form_dropdown(${6:'${1:variable}', ${3:'${2:options}'}, ${5:'${4:selected}'}});
+            '''
   'Codeigniter Fieldset':
     'prefix':'ciformfs'
-    'body': """
-      form_fieldset(${4:'${1:variable}', ${3:'${2:attributes}'}});
-     """
+    'body': '''
+             form_fieldset(${4:'${1:variable}', ${3:'${2:attributes}'}});
+            '''
 
   'Codeigniter Fieldset Close':
     'prefix':'ciformfsc'
-    'body': """
-      form_fieldset_close();
-     """
-
+    'body': '''
+             form_fieldset_close();
+            '''
   'Codeigniter Hidden Field ':
     'prefix':'ciformhi'
-    'body': """
-      form_hidden(${4:'${1:variable}', ${3:'${2:value}'}});
-     """
-
+    'body': '''
+             form_hidden(${4:'${1:variable}', ${3:'${2:value}'}});
+            '''
   'Codeigniter Input':
     'prefix':'ciformin'
-    'body': """
-      form_input(${4:'${1:variable}', ${3:'${2:value}'}});
-     """
-
+    'body': '''
+             form_input(${4:'${1:variable}', ${3:'${2:value}'}});
+            '''
   'Codeigniter Multiselect':
     'prefix':'ciformms'
-    'body': """
-      form_multiselect(${6:'${1:variable}', ${3:'${2:options}'}, ${5:'${4:selected}'}});
-     """
-
+    'body': '''
+             form_multiselect(${6:'${1:variable}', ${3:'${2:options}'}, ${5:'${4:selected}'}});
+            '''
   'Codeigniter Form Open':
     'prefix':'ciformopen'
-    'body': """
-      form_open('${1:url}', ${2:\$attributes}, ${3:\$hidden});
-     """
+    'body': '''
+             form_open('${1:url}', ${2:\$attributes}, ${3:\$hidden});
+            '''
 
   'Codeigniter Form Multipart':
     'prefix':'ciformmulti'
-    'body': """
-      form_open_multipart('${1:url}', ${2:\$attributes}, ${3:\$hidden});
-     """
-
+    'body': '''
+             form_open_multipart('${1:url}', ${2:\$attributes}, ${3:\$hidden});
+            '''
   'Codeigniter Password Field':
     'prefix':'ciformpass'
-    'body': """
-      form_password(${4:'${1:variable}', ${3:'${2:password}'}});
-     """
-
+    'body': '''
+             form_password(${4:'${1:variable}', ${3:'${2:password}'}});
+            '''
   'Codeigniter Textarea':
     'prefix':'ciformtext'
-    'body': """
-      form_textarea(${4:'${1:variable}', ${3:'${2:value}'}});
-     """
-
+    'body': '''
+             form_textarea(${4:'${1:variable}', ${3:'${2:value}'}});
+            '''
   'Codeigniter File Input':
     'prefix':'ciformup'
-    'body': """
-      form_upload('${1:upload}');
-     """
-
+    'body': '''
+             form_upload('${1:upload}');
+            '''
   'Codeigniter Checkbox':
     'prefix':'ciformch'
-    'body': """
-      form_checkbox(${1:\$data}, ${2:\$value}, ${3:\$checked}, ${4:\$extra});
-     """
-
+    'body': '''
+             form_checkbox(${1:\$data}, ${2:\$value}, ${3:\$checked}, ${4:\$extra});
+            '''
   'Codeigniter Radio':
     'prefix':'ciformra'
-    'body': """
-      form_radio(${1:\$data}, ${2:\$value}, ${3:\$checked}, ${4:\$extra});
-     """
-
+    'body': '''
+             form_radio(${1:\$data}, ${2:\$value}, ${3:\$checked}, ${4:\$extra});
+            '''
   'Codeigniter Label':
     'prefix':'ciformla'
-    'body': """
-      form_label('${1:label}', ${2:\$id}, ${3:\$attributes})
-     """
-
+    'body': '''
+             form_label('${1:label}', ${2:\$id}, ${3:\$attributes})
+            '''
   'Codeigniter Submit':
     'prefix':'ciformsub'
-    'body': """
-      form_submit(${1:\$data}, ${2:\$value}, ${3:\$extra});
-     """
-
+    'body': '''
+             form_submit(${1:\$data}, ${2:\$value}, ${3:\$extra});
+            '''
   'Codeigniter Reset':
     'prefix':'ciformres'
-    'body': """
-      form_reset(${1:\$data}, ${2:\$value}, ${3:\$extra});
-     """
-
+    'body': '''
+             form_reset(${1:\$data}, ${2:\$value}, ${3:\$extra});
+            '''
   'Codeigniter Button':
     'prefix':'ciformbut'
-    'body': """
-      form_button(${1:\$data}, ${2:\$value}, ${3:\$extra});
-     """
-
+    'body': '''
+             form_button(${1:\$data}, ${2:\$value}, ${3:\$extra});
+            '''
   'Codeigniter Close':
     'prefix':'ciformclose'
-    'body': """
-      form_close(${1:\$extra});
-     """
-
+    'body': '''
+             form_close(${1:\$extra});
+            '''
   'Codeigniter Set Value':
     'prefix':'cisetval'
-    'body': """
-      set_value(${1:\$field}, ${2:\$default}, ${3:TRUE});
-     """
-
+    'body': '''
+             set_value(${1:\$field}, ${2:\$default}, ${3:TRUE});
+            '''
   'Codeigniter Set Select':
     'prefix':'cisetsel'
-    'body': """
-      set_select(${1:\$field}, ${2:\$value}, ${3:FALSE});
-     """
-
+    'body': '''
+             set_select(${1:\$field}, ${2:\$value}, ${3:FALSE});
+            '''
   'Codeigniter Set Checkbox':
     'prefix':'cisetcheck'
-    'body': """
-      set_checkbox(${1:\$field}, ${2:\$value}, ${3:FALSE});
-     """
-
+    'body': '''
+             set_checkbox(${1:\$field}, ${2:\$value}, ${3:FALSE});
+            '''
   'Codeigniter Set Radio':
     'prefix':'cisetradio'
-    'body': """
-      set_radio(${1:\$field}, ${2:\$value}, ${3:FALSE});
-     """
-
+    'body': '''
+             set_radio(${1:\$field}, ${2:\$value}, ${3:FALSE});
+            '''
   'Codeigniter Form Error':
     'prefix':'ciformerr'
-    'body': """
-      form_error(${1:\$field}, ${2:\$prefix}, ${3:\$suffix});
-     """
-
+    'body': '''
+             form_error(${1:\$field}, ${2:\$prefix}, ${3:\$suffix});
+            '''
   'Codeigniter Validation Errors':
     'prefix':'civalerr'
-    'body': """
-      validation_errors(${1:\$field}, ${2:\$prefix}, ${3:\$suffix});
-     """
+    'body': '''
+             validation_errors(${1:\$field}, ${2:\$prefix}, ${3:\$suffix});
+            '''

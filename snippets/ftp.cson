@@ -1,0 +1,68 @@
+'.source.php':
+  'FTP Change Mode':
+    'prefix': 'ciftpchmod'
+    'body': '''
+            \$this->ftp->chmod(${1:\$file}, ${2:0775});
+            '''
+  'FTP Close':
+    'prefix': 'ciftpclose'
+    'body': '''
+            \$this->ftp->close();
+            '''
+  'FTP Connect':
+    'prefix': 'ciftpcon'
+    'body': '''
+            \$${1:config}['hostname'] = '$2';
+            \$$1['username'] = '$3';
+            \$$1['password'] = '$4';
+            \$$1['port']     = ${5:21};
+            \$$1['passive']  = ${6:FALSE};
+            \$$1['debug']    = ${7:TRUE};
+
+            \$this->ftp->connect($1);
+            '''
+  'FTP Delete Directory':
+    'prefix': 'ciftplist'
+    'body': '''
+            \$this->ftp->list_files(${1:\$path});
+            '''
+  'FTP Delete Directory':
+    'prefix': 'ciftpdeldir'
+    'body': '''
+            \$this->ftp->delete_dir(${1:\$file});
+            '''
+  'FTP Download':
+    'prefix': 'ciftpdown'
+    'body': '''
+            \$this->ftp->download(${1:\$remote}, ${2:\$local}, ${3:'auto'});
+            '''
+  'FTP List Files':
+    'prefix': 'ciftplist'
+    'body': '''
+            \$${1:files} = \$this->ftp->list_files(${2:\$path});
+            '''
+  'FTP Mirror':
+    'prefix': 'ciftpmir'
+    'body': '''
+            \$this->ftp->mirror(${1:\$local}, ${2:0775});
+            '''
+  'FTP Make Directory':
+    'prefix': 'ciftpmkdir'
+    'body': '''
+            \$this->ftp->mkdir(${1:\$local}, ${2:0775});
+            '''
+  'FTP Delete File':
+    'prefix': 'ciftpdelf'
+    'body': '''
+            \$this->ftp->delete_file(${1:\$file});
+            '''
+  'FTP Move':
+    'prefix': 'ciftpmov'
+    'body': '''
+            \$this->ftp->move(${1:\$from}, ${2:\$to});
+            '''
+  'FTP Rename':
+    'prefix': 'ciftpren'
+    'body': '''
+            \$this->ftp->upload(${1:\$local}, ${2:\$remote}, ${3:'auto'}, ${4:0775});
+            '''

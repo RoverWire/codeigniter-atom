@@ -1,18 +1,16 @@
 '.source.php':
   'Codeigniter Array Element':
     'prefix':'ciarrayel'
-    'body': """
-      element(${1:'${2:key}'}, ${3:\$array}${4:, NULL});
-     """
-
+    'body': '''
+             element(${1:'${2:key}'}, ${3:\$array}${4:, NULL});
+            '''
   'Codeigniter Array Elements':
     'prefix':'ciarrayels'
-    'body': """
-      elements(${1:\$array}, ${2:\$array}${3:, NULL});
-     """
-     
+    'body': '''
+             elements(${1:\$array}, ${2:\$array}${3:, NULL});
+            '''
   'Codeigniter Array Random Element':
     'prefix':'ciarrayrand'
-    'body': """
-      random_element(${1:\$array});
-     """
+    'body': '''
+             random_element(${1:\$array});
+            '''

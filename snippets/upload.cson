@@ -1,0 +1,28 @@
+'.source.php':
+  'File Upload Config':
+    'prefix': 'ciupconf'
+    'body': '''
+            \$${1:conf}['upload_path']   = ${2:'${3:/uploads/}'};
+            \$${1:conf}['allowed_types'] = ${4:'${5:gif|jpg|png}'};
+            \$${1:conf}['file_name']     = '$6';
+            \$${1:conf}['overwrite']     = ${7:FALSE};
+            \$${1:conf}['max_size']      = ${8:0};
+            \$${1:conf}['max_width']     = ${9:0};
+            \$${1:conf}['max_height']    = ${10:0};
+            \$${1:conf}['encrypt_name']  = ${11:FALSE};
+            '''
+  'File Upload Data':
+    'prefix': 'ciupdata'
+    'body': '''
+            ${1:\$${2:var} =} \$this->upload->data();
+            '''
+  'File Upload Errors':
+    'prefix': 'ciupdisplay'
+    'body': '''
+            \$this->upload->display_errors(${1:'${2:<p>}', '${3:</p>}'});
+            '''
+  'Do Upload':
+    'prefix': 'ciupdo'
+    'body': '''
+            \$this->upload->do_upload(${1:\$field_name});
+            '''

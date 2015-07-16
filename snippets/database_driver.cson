@@ -1,73 +1,62 @@
 '.source.php':
-  'Codeigniter DB Add Column':
-    'prefix':'cidbaddc'
-    'body': """
+  'Database Forge Add Column':
+    'prefix': 'cidbfaddcol'
+    'body': '''
       \$this->dbforge->add_column(${1:'${2:table_name}'}, ${3:$fields});
-     """
-
-  'Codeigniter DB Add Field':
-    'prefix':'cidbaddf'
-    'body': """
+    '''
+  'Database Forge Add Field':
+    'prefix': 'cidbfaddf'
+    'body': '''
       \$this->dbforge->add_field(${1:"${2:string or array}"});
-     """
-
-  'Codeigniter DB Add Key':
-    'prefix':'cidbaddk'
-    'body': """
+    '''
+  'Database Forge Add Key':
+    'prefix': 'cidbfaddk'
+    'body': '''
       \$this->dbforge->add_key(${1:'${2:database}'}${3:, $4{:TRUE}});
-     """
-
-  'Codeigniter DB Affected Rows':
-    'prefix':'cidbaffected'
-    'body': """
+    '''
+  'Database Affected Rows':
+    'prefix': 'cidbaff'
+    'body': '''
       \$this->db->affected_rows();
-     """
-
-  'Codeigniter DB Backup':
-    'prefix':'cidbback'
-    'body': """
+    '''
+  'Database Utility Backup':
+    'prefix': 'cidbuback'
+    'body': '''
       \$this->dbutil->backup(${1:\$preferences});
-     """
-
-  'Codeigniter DB Cache Delete':
-    'prefix':'cidbcachedel'
-    'body': """
+    '''
+  'Database Cache Delete':
+    'prefix': 'cidbcachedel'
+    'body': '''
       \$this->db->cache_delete(${1:${2:'$3{controller}'}, ${4:'$5{method}'}});
-     """
-
-  'Codeigniter DB Cache Delete All':
-    'prefix':'cidbcachedelall'
-    'body': """
+    '''
+  'Database Cache Delete All':
+    'prefix': 'cidbcachedelall'
+    'body': '''
       \$this->db->cache_delete_all();
-     """
-
-  'Codeigniter DB Cache Off':
-    'prefix':'cidbcacheoff'
-    'body': """
+    '''
+  'Database Cache Off':
+    'prefix': 'cidbcacheoff'
+    'body': '''
       \$this->db->cache_off();
-     """
-
-  'Codeigniter DB Cache On':
-    'prefix':'cidbcacheon'
-    'body': """
+    '''
+  'Database Cache On':
+    'prefix': 'cidbcacheon'
+    'body': '''
       \$this->db->cache_on();
-     """
-
-  'Codeigniter DB Call Function':
-    'prefix':'cidbcall'
-    'body': """
+    '''
+  'Database Function Call':
+    'prefix': 'cidbcall'
+    'body': '''
       \$this->db->call_function(${1:'${2:funtion_name}'}${3:, ${4:$params}});
-     """
-
-  'Codeigniter DB Close':
-    'prefix':'cidbclose'
-    'body': """
+    '''
+  'Database Close':
+    'prefix': 'cidbclose'
+    'body': '''
       \$this->db->close();
-     """
-
-  'Codeigniter DB Configuration 2.x':
-    'prefix':'cidbconf2'
-    'body': """
+    '''
+  'Database Configuration v2':
+    'prefix': 'cidbconf2'
+    'body': '''
       \$${1:db}${2:['${3:test}']}['hostname'] = "${4:localhost}";
       \$${1:db}${2:['$3']}['username'] = "${5:root}";
       \$${1:db}${2:['$3']}['password'] = "$6";
@@ -83,11 +72,10 @@
       \$${1:db}${2:['$3']}['swap_pre'] = "$16";
       \$${1:db}${2:['$3']}['autoinit'] = ${17:TRUE};
       \$${1:db}${2:['$3']}['stricton'] = ${18:FALSE};
-     """
-
-  'Codeigniter DB Configuration':
-    'prefix':'cidbconf'
-    'body': """
+    '''
+  'Database Configuration v3':
+    'prefix':'cidbconf3'
+    'body': '''
       \$${1:db}${2:['${3:default}']} = array(
         'dsn'   => '$4',
         'hostname' => '${5:localhost}',
@@ -97,7 +85,7 @@
         'dbdriver' => '${9:mysqli}',
         'dbprefix' => '$10',
         'pconnect' => ${11:TRUE},
-        'db_debug' => ${12:TRUE},
+        'db_debug' => ${12:FALSE},
         'cache_on' => ${13:FALSE},
         'cachedir' => '$14',
         'char_set' => '${15:utf8}',
@@ -108,16 +96,469 @@
         'stricton' => ${20:FALSE},
         'failover' => array($21)
       );
-     """
-
-  'Codeigniter DB Count All':
-    'prefix':'cidbcount'
-    'body': """
+     '''
+  'Database Count All':
+    'prefix': 'cidbcount'
+    'body': '''
       \$this->db->count_all(${1:'${2:table_name}'});
-     """
-
-  'Codeigniter DB Count All Results':
-    'prefix':'cidbcountar'
-    'body': """
+    '''
+  'Database A.R. Count All Results':
+    'prefix': 'cidbcountar'
+    'body': '''
       ${1:\$this->db}->count_all_results(${2:'${3:table_name}'});
-     """
+    '''
+  'Database Forge Create DB':
+    'prefix': 'cidbfcreatedb'
+    'body': '''
+      \$this->dbforge->create_database(${1:'${2:database}'});
+    '''
+  'Database Forge Create Table':
+    'prefix': 'cidbfcreatetb'
+    'body': '''
+      \$this->dbforge->create_table(${1:'${2:table}'}${3:, $4{:TRUE}});
+    '''
+  'Database Utility CSV From Result':
+    'prefix': 'cidbucsvres'
+    'body': '''
+      \$this->dbutil->csv_from_result(${1:\$db_result});
+    '''
+  'Database Utility DB Exists':
+    'prefix': 'cidbudbexists'
+    'body': '''
+      \$this->dbutil->database_exists(${1:'${2:database}'});
+    '''
+  'Database Prefix':
+    'prefix': 'cidbpre'
+    'body': '''
+      \$this->db->dbprefix(${1:'${2:table_name}'});
+    '''
+  'Database A.R. Delete':
+    'prefix': 'cidbdel'
+    'body': '''
+      ${1:\$this->db}->delete(${2:'${3:table}'}${5:, ${6:\$array}});
+    '''
+  'Database A.R. Having':
+    'prefix': 'cidbdis'
+    'body': '''
+      ${1:\$this->db}->distinct(${2:'${3:field}'});
+    '''
+  'Database Forge Drop Column':
+    'prefix': 'cidbfdropcol'
+    'body': '''
+      \$this->dbforge->drop_column(${1:'${2:table_name}'}, ${3:'${4:column_name}'});
+    '''
+  'Database Forge Drop DB':
+    'prefix': 'cidbfdropdb'
+    'body': '''
+      \$this->dbforge->drop_database(${1:'${2:database}'});
+    '''
+  'Database Forge Drop Table':
+    'prefix': 'cidbfdroptb'
+    'body': '''
+      \$this->dbforge->drop_table(${1:'${2:table}'});
+    '''
+  'Database A.R. Empty Table':
+    'prefix': 'cidbempty'
+    'body': '''
+      \$this->db->empty_table(${1:'${2:table}'});
+    '''
+  'Database Data Escape':
+    'prefix': 'cidbesc'
+    'body': '''
+      \$this->db->escape($1);
+    '''
+  'Database Escape Like':
+    'prefix': 'cidbesclike'
+    'body': '''
+      \$this->db->escape_like_str($1);
+    '''
+  'Database Escape String':
+    'prefix': 'cidbescstr'
+    'body': '''
+      \$this->db->escape_str($1);
+    '''
+  'Database Field Data':
+    'prefix': 'cidbfieldat'
+    'body': '''
+      \$this->db->field_data(${1:'${2:table}'});
+    '''
+  'Database Field Exists':
+    'prefix': 'cidbfieldex'
+    'body': '''
+      \$this->db->field_exists(${1:'${2:field}'}, ${3:'${4:table}'});
+    '''
+  'Database First Row':
+    'prefix': 'cidbfrow'
+    'body': '''
+      \$${1:query}->first_row(${2:'Array'});
+    '''
+  'Database A.R. Flush Cache':
+    'prefix': 'cidbflushca'
+    'body': '''
+      \$this->db->flush_cache();
+    '''
+  'Database Free Result':
+    'prefix': 'cidbfree'
+    'body': '''
+      \$${1:query}->free_result();
+    '''
+  'Database A.R. From':
+    'prefix': 'cidbfrom'
+    'body': '''
+      ${1:\$this->db}->from(${2:'${3:table}'});
+    '''
+  'Database A.R. Get':
+    'prefix': 'cidbget'
+    'body': '''
+      ${1:\$this->db}->get(${2:'${3:table}'}${4:, ${5:\$limit}${6:, ${7:\$offset}}});
+    '''
+  'Database A.R. Get Where':
+    'prefix': 'cidbgetw'
+    'body': '''
+      ${1:\$this->db}->get_where(${2:'${3:table}'}, ${4:\$arr_criteria}${5:, ${6:\$limit}${7:, ${8:\$offset}}});
+    '''
+  'Database A.R. Group By':
+    'prefix': 'cidbgroup'
+    'body': '''
+      ${1:\$this->db}->group_by(${2:'${3:field}'});
+    '''
+  'Database A.R. Having':
+    'prefix': 'cidbhav'
+    'body': '''
+      ${1:\$this->db}->having(${2:'${3:field}'}${4:, ${5:'${6:value}'}});
+    '''
+  'Database A.R. Insert':
+    'prefix': 'cidbin'
+    'body': '''
+      \$this->db->insert(${1:'${2:table}'}, ${3:\$data});
+    '''
+  'Database A.R. Insert Batch':
+    'prefix': 'cidbinb'
+    'body': '''
+      \$this->db->insert_batch(${1:'${2:table}'}, ${3:\$data});
+    '''
+  'Database Insert Id':
+    'prefix': 'cidbid'
+    'body': '''
+      \$this->db->insert_id();
+    '''
+  'Database Insert String':
+    'prefix': 'cidbinstr'
+    'body': '''
+      \$this->db->insert_string(${1:'${2:table}'}, ${3:\$data});
+    '''
+  'Database A.R. Join':
+    'prefix': 'cidbjoin'
+    'body': '''
+      ${1:\$this->db}->join(${2:'${3:table}'}, ${4:'${5:table1.field = table2.field}'}${6:, '${7:left}'});
+    '''
+  'Database Last Query':
+    'prefix': 'cidblast'
+    'body': '''
+      \$this->db->last_query();
+    '''
+  'Database Last Row':
+    'prefix': 'cidblrow'
+    'body': '''
+      \$${1:query}->last_row(${2:'Array'});
+    '''
+  'Database A.R. Like':
+    'prefix': 'cidblike'
+    'body': '''
+      ${1:\$this->db}->like(${2:'${3:field}'}, ${4:'${5:value}'}${6:, ${7:'${8:both}'}});
+    '''
+  'Database A.R. Limit':
+    'prefix': 'cidblim'
+    'body': '''
+      ${1:\$this->db}->limit(${2:\$limit}${3:, ${4:\$offset}});
+    '''
+  'Database Utility List DB':
+    'prefix': 'cidbulistdb'
+    'body': '''
+      \$this->dbutil->list_databases();
+    '''
+  'Database List Fields':
+    'prefix': 'cidblistf'
+    'body': '''
+      \$this->db->list_fields(${1:'${2:table}'});
+    '''
+  'Database List Tables':
+    'prefix': 'cidblistt'
+    'body': '''
+      \$this->db->list_tables();
+    '''
+  'Database Forge Load':
+    'prefix': 'cidbforge'
+    'body': '''
+      \$this->load->dbforge();
+    '''
+  'Database Utility Load':
+    'prefix': 'cidbutil'
+    'body': '''
+      \$this->load->dbutil();
+    '''
+  'Database Forge Modify Column':
+    'prefix': 'cidbfmodcol'
+    'body': '''
+      \$this->dbforge->modify_column(${1:'${2:table_name}'}, ${3:$fields});
+    '''
+  'Database Next Row':
+    'prefix': 'cidbnrow'
+    'body': '''
+      \$${1:query}->next_row(${2:'Array'});
+    '''
+  'Database A.R. Not Like':
+    'prefix': 'cidbnlike'
+    'body': '''
+      ${1:\$this->db}->not_like(${2:'${3:field}'}, ${4:'${5:value}'}${6:, ${7:'${8:both}'}});
+    '''
+  'Database Number of Fields':
+    'prefix': 'cidbnumfi'
+    'body': '''
+      \$${1:query}->num_fields();
+    '''
+  'Database Result Number Rows':
+    'prefix': 'cidbnum'
+    'body': '''
+      \$${1:query}->num_rows();
+    '''
+  'Database Utility Optimize DB':
+    'prefix': 'cidbuoptdb'
+    'body': '''
+      \$this->dbutil->optimize_database();
+    '''
+  'Database Utility Optimize Table':
+    'prefix': 'cidbuopttb'
+    'body': '''
+      \$this->dbutil->optimize_table(${1:'${2:table}'});
+    '''
+  'Database A.R. Or Having':
+    'prefix': 'cidbohav'
+    'body': '''
+      ${1:\$this->db}->or_having(${2:'${3:field}'}${4:, ${5:'${6:value}'}});
+    '''
+  'Database A.R. Or Like':
+    'prefix': 'cidbolike'
+    'body': '''
+      ${1:\$this->db}->or_like(${2:'${3:field}'}, ${4:'${5:value}'}${6:, ${7:'${8:both}'}});
+    '''
+  'Database A.R. Not Like':
+    'prefix': 'cidbonlike'
+    'body': '''
+      ${1:\$this->db}->or_not_like(${2:'${3:field}'}, ${4:'${5:value}'}${6:, ${7:'${8:both}'}});
+    '''
+  'Database A.R. Or Where':
+    'prefix': 'cidborw'
+    'body': '''
+      ${1:\$this->db}->or_where(${2:${3:'${4:field}'}, ${5:'${6:value}'}});
+    '''
+  'Database A.R. Or Where In':
+    'prefix': 'cidborwin'
+    'body': '''
+      ${1:\$this->db}->or_where_in(${2:${3:'${4:field}'}, ${5:\$arr_values}});
+    '''
+  'Database A.R. Or Where Not In':
+    'prefix': 'cidborwnin'
+    'body': '''
+      ${1:\$this->db}->or_where_not_in(${2:${3:'${4:field}'}, ${5:\$arr_values}});
+    '''
+  'Database A.R. Order':
+    'prefix': 'cidborder'
+    'body': '''
+      ${1:\$this->db}->order_by(${2:'${3:field}'}, ${5:'${6:asc}'});
+    '''
+  'Database Platform':
+    'prefix': 'cidbpla'
+    'body': '''
+      \$this->db->platform();
+    '''
+  'Database Previous Row':
+    'prefix': 'cidbprow'
+    'body': '''
+      \$${1:query}->previous_row(${2:'Array'});
+    '''
+  'Database Protect Identifiers':
+    'prefix': 'cidbproid'
+    'body': '''
+      \$this->db->protect_identifiers(${1:'${2:table_name}'}${3:, TRUE});
+    '''
+  'Database Query':
+    'prefix': 'cidbquery'
+    'body': '''
+      \$this->db->query($1);
+    '''
+  'Database Reconnect':
+    'prefix': 'cidbrecon'
+    'body': '''
+      \$this->db->reconnect();
+    '''
+  'Database Forge Rename Table':
+    'prefix': 'cidbfrenametb'
+    'body': '''
+      \$this->dbforge->rename_table(${1:'${2:old_name}'}, ${3:'${4:new_name}'});
+    '''
+  'Database Utility Repair Table':
+    'prefix': 'cidbureptb'
+    'body': '''
+      \$this->dbutil->repair_table(${1:'${2:table}'});
+    '''
+  'Database Query Result':
+    'prefix': 'cidbres'
+    'body': '''
+      \$${1:query}->result();
+    '''
+  'Database Result Array':
+    'prefix': 'cidbresar'
+    'body': '''
+      \$${1:query}->result_array();
+    '''
+  'Database Row':
+    'prefix': 'cidbrow'
+    'body': '''
+      \$${1:query}->row();
+    '''
+  'Database Row Array':
+    'prefix': 'cidbrowar'
+    'body': '''
+      \$${1:query}->row_array();
+    '''
+  'Database A.R. Select':
+    'prefix': 'cidbsel'
+    'body': '''
+      ${1:\$this->db}->select(${2:'${3:fields}'}${4:, ${5:FALSE}});
+    '''
+  'Database A.R. Select Average':
+    'prefix': 'cidbselavg'
+    'body': '''
+      ${1:\$this->db}->select_avg(${2:'${3:field}'}${4:, ${5:'${6:field_alias}'}});
+    '''
+  'Database A.R. Select Max':
+    'prefix': 'cidbselmax'
+    'body': '''
+      ${1:\$this->db}->select_max(${2:'${3:field}'}${4:, ${5:'${6:field_alias}'}});
+    '''
+  'Database A.R. Select Min':
+    'prefix': 'cidbselmin'
+    'body': '''
+      ${1:\$this->db}->select_min(${2:'${3:field}'}${4:, ${5:'${6:field_alias}'}});
+    '''
+  'Database A.R. Select Sum':
+    'prefix': 'cidbselsum'
+    'body': '''
+      ${1:\$this->db}->select_sum(${2:'${3:field}'}${4:, ${5:'${6:field_alias}'}});
+    '''
+  'Database A.R. Set':
+    'prefix': 'cidbset'
+    'body': '''
+      ${1:\$this->db}->set(${3:'${4:field}'}, ${5:'${6:value}'}${7:, ${8:FALSE}});
+    '''
+  'Database Set Prefix':
+    'prefix': 'cidbsetpre'
+    'body': '''
+      \$this->db->set_dbprefix(${1:'${2:table_name}'});
+    '''
+  'Database Simple Query':
+    'prefix': 'cidbsquery'
+    'body': '''
+      \$this->db->simple_query($1);
+    '''
+  'Database A.R. Start Cache':
+    'prefix': 'cidbstartca'
+    'body': '''
+      \$this->db->start_cache();
+    '''
+  'Database A.R. Stop Cache':
+    'prefix': 'cidbstopca'
+    'body': '''
+      \$this->db->stop_cache();
+    '''
+  'Database Table Exists':
+    'prefix': 'cidbtabex'
+    'body': '''
+      \$this->db->table_exists(${1:'${2:table}'});
+    '''
+  'Database Transaction Begin':
+    'prefix': 'cidbtransbeg'
+    'body': '''
+      \$this->db->trans_begin();
+    '''
+  'Database Transaction Commit':
+    'prefix': 'cidbtranscom'
+    'body': '''
+      \$this->db->trans_commit();
+    '''
+  'Database Transaction Complete':
+    'prefix': 'cidbtranscom'
+    'body': '''
+      \$this->db->trans_complete();
+    '''
+  'Database Transaction Off':
+    'prefix': 'cidbtransoff'
+    'body': '''
+      \$this->db->trans_off();
+    '''
+  'Database Transaction Rollback':
+    'prefix': 'cidbtransroll'
+    'body': '''
+      \$this->db->trans_rollback();
+    '''
+  'Database Transaction Start':
+    'prefix': 'cidbtrans'
+    'body': '''
+      \$this->db->trans_start(${1:FALSE});
+    '''
+  'Database Transaction Status':
+    'prefix': 'cidbtranstat'
+    'body': '''
+      \$this->db->trans_status()${1:;}
+    '''
+  'Database Transaction Strict':
+    'prefix': 'cidbtranstr'
+    'body': '''
+      \$this->db->trans_strict(${1:FALSE});
+    '''
+  'Database A.R. Truncate':
+    'prefix': 'cidbtrun'
+    'body': '''
+      ${1:\$this->db}->truncate(${2:'${3:table}'});
+    '''
+  'Database A.R. Update':
+    'prefix': 'cidbup'
+    'body': '''
+      ${1:\$this->db}->update(${2:'${3:table}'}, ${4:\$data}${5:, ${6:\$condition}});
+    '''
+  'Database A.R. Update Batch':
+    'prefix': 'cidbupb'
+    'body': '''
+      \$this->db->update(${1:'${2:table}'}, ${3:\$data}${4:, ${5:'${6:field}'}});
+    '''
+  'Database Update String':
+    'prefix': 'cidbupstr'
+    'body': '''
+      \$this->db->update_string(${1:'${2:table}'}, ${3:\$data});
+    '''
+  'Database Version':
+    'prefix': 'cidbver'
+    'body': '''
+      \$this->db->version();
+    '''
+  'Database A.R. Where':
+    'prefix': 'cidbwhere'
+    'body': '''
+      ${1:\$this->db}->where(${2:${3:'${4:field}'}, ${5:'${6:value}'}}${7:, ${8:FALSE}});
+    '''
+  'Database A.R. Where In':
+    'prefix': 'cidbwin'
+    'body': '''
+      ${1:\$this->db}->where_in(${2:${3:'${4:field}'}, ${5:\$arr_values}});
+    '''
+  'Database A.R. Where Not In':
+    'prefix': 'cidbwnin'
+    'body': '''
+      ${1:\$this->db}->where_not_in(${2:${3:'${4:field}'}, ${5:\$arr_values}});
+    '''
+  'Database Utility XML From Result':
+    'prefix': 'cidbuxmlres'
+    'body': '''
+      \$this->dbutil->xml_from_result(${1:\$db_result});
+    '''

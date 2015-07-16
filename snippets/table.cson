@@ -1,0 +1,31 @@
+'.source.php':
+  'Table Add Row':
+    'prefix': 'citablerow'
+    'body': '''
+            \$this->table->add_row(${1:\$string});
+            '''
+  'Table Clear':
+    'prefix': 'citablecl'
+    'body': '''
+            \$this->table->clear();
+            '''
+  'Table Generate':
+    'prefix': 'citablegen'
+    'body': '''
+            \$this->table->generate(${1:\$param});
+            '''
+  'Table Make Columns':
+    'prefix': 'citablecol'
+    'body': '''
+            \$this->table->make_columns(${1:\$array}, ${2:\$cols});
+            '''
+  'Table Set Caption':
+    'prefix': 'citablecap'
+    'body': '''
+            \$this->table->set_caption(${1:\$string});
+            '''
+  'Table Set Header':
+    'prefix': 'citablehead'
+    'body': '''
+            \$this->table->set_heading(${1:\$string});
+            '''

@@ -1,0 +1,31 @@
+'.source.php':
+  'Config Base URL':
+    'prefix': 'ciconfbase'
+    'body': '''
+      \$this->conf->base_url();
+    '''
+  'Config Item':
+    'prefix': 'ciconfitem'
+    'body': '''
+      \$this->conf->item(${1:'${2:item_name}'});
+    '''
+  'Config Load':
+    'prefix': 'ciconfload'
+    'body': '''
+      \$this->config->load(${1:'filename'}${2:, ${3:TRUE}${4:, ${5:TRUE}}});
+    '''
+  'Config Set Item':
+    'prefix': 'ciconfset'
+    'body': '''
+      \$this->conf->set_item(${1:'${2:item_name}'}, ${3:'${4:item_value}'});
+    '''
+  'Config Site URL':
+    'prefix': 'ciconfsite'
+    'body': '''
+      \$this->conf->site_url();
+    '''
+  'Config System URL':
+    'prefix': 'ciconfsys'
+    'body': '''
+      \$this->conf->system_url();
+    '''
