@@ -1,0 +1,23 @@
+'*':
+  'Codeigniter Controller':
+    'prefix':'cicontroller'
+    'body': """
+      <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+      class ${1:ControllerName} extends ${2:CI}_Controller {
+
+      	public function __construct()
+      	{
+      		parent::__construct();$3
+      	}
+
+      	public function index()
+      	{
+      		$0
+      	}
+
+      }
+
+      /* End of file ${1:ControllerName}.php */
+      /* Location: ./application/controllers/${1:ControllerName}.php */
+    """

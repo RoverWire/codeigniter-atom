@@ -1,0 +1,123 @@
+'.source.php':
+  'Codeigniter DB Add Column':
+    'prefix':'cidbaddc'
+    'body': """
+      \$this->dbforge->add_column(${1:'${2:table_name}'}, ${3:$fields});
+     """
+
+  'Codeigniter DB Add Field':
+    'prefix':'cidbaddf'
+    'body': """
+      \$this->dbforge->add_field(${1:"${2:string or array}"});
+     """
+
+  'Codeigniter DB Add Key':
+    'prefix':'cidbaddk'
+    'body': """
+      \$this->dbforge->add_key(${1:'${2:database}'}${3:, $4{:TRUE}});
+     """
+
+  'Codeigniter DB Affected Rows':
+    'prefix':'cidbaffected'
+    'body': """
+      \$this->db->affected_rows();
+     """
+
+  'Codeigniter DB Backup':
+    'prefix':'cidbback'
+    'body': """
+      \$this->dbutil->backup(${1:\$preferences});
+     """
+
+  'Codeigniter DB Cache Delete':
+    'prefix':'cidbcachedel'
+    'body': """
+      \$this->db->cache_delete(${1:${2:'$3{controller}'}, ${4:'$5{method}'}});
+     """
+
+  'Codeigniter DB Cache Delete All':
+    'prefix':'cidbcachedelall'
+    'body': """
+      \$this->db->cache_delete_all();
+     """
+
+  'Codeigniter DB Cache Off':
+    'prefix':'cidbcacheoff'
+    'body': """
+      \$this->db->cache_off();
+     """
+
+  'Codeigniter DB Cache On':
+    'prefix':'cidbcacheon'
+    'body': """
+      \$this->db->cache_on();
+     """
+
+  'Codeigniter DB Call Function':
+    'prefix':'cidbcall'
+    'body': """
+      \$this->db->call_function(${1:'${2:funtion_name}'}${3:, ${4:$params}});
+     """
+
+  'Codeigniter DB Close':
+    'prefix':'cidbclose'
+    'body': """
+      \$this->db->close();
+     """
+
+  'Codeigniter DB Configuration 2.x':
+    'prefix':'cidbconf2'
+    'body': """
+      \$${1:db}${2:['${3:test}']}['hostname'] = "${4:localhost}";
+      \$${1:db}${2:['$3']}['username'] = "${5:root}";
+      \$${1:db}${2:['$3']}['password'] = "$6";
+      \$${1:db}${2:['$3']}['database'] = "${7:database_name}";
+      \$${1:db}${2:['$3']}['dbdriver'] = "${8:mysql}";
+      \$${1:db}${2:['$3']}['dbprefix'] = "$9";
+      \$${1:db}${2:['$3']}['pconnect'] = ${10:TRUE};
+      \$${1:db}${2:['$3']}['db_debug'] = ${11:FALSE};
+      \$${1:db}${2:['$3']}['cache_on'] = ${12:FALSE};
+      \$${1:db}${2:['$3']}['cachedir'] = "$13";
+      \$${1:db}${2:['$3']}['char_set'] = "${14:utf8}";
+      \$${1:db}${2:['$3']}['dbcollat'] = "${15:utf8_general_ci}";
+      \$${1:db}${2:['$3']}['swap_pre'] = "$16";
+      \$${1:db}${2:['$3']}['autoinit'] = ${17:TRUE};
+      \$${1:db}${2:['$3']}['stricton'] = ${18:FALSE};
+     """
+
+  'Codeigniter DB Configuration':
+    'prefix':'cidbconf'
+    'body': """
+      \$${1:db}${2:['${3:default}']} = array(
+        'dsn'   => '$4',
+        'hostname' => '${5:localhost}',
+        'username' => '$6',
+        'password' => '$7',
+        'database' => '${8:database_name}',
+        'dbdriver' => '${9:mysqli}',
+        'dbprefix' => '$10',
+        'pconnect' => ${11:TRUE},
+        'db_debug' => ${12:TRUE},
+        'cache_on' => ${13:FALSE},
+        'cachedir' => '$14',
+        'char_set' => '${15:utf8}',
+        'dbcollat' => '${16:utf8_general_ci}',
+        'swap_pre' => '$17',
+        'encrypt'  => ${18:FALSE},
+        'compress' => ${19:FALSE},
+        'stricton' => ${20:FALSE},
+        'failover' => array($21)
+      );
+     """
+
+  'Codeigniter DB Count All':
+    'prefix':'cidbcount'
+    'body': """
+      \$this->db->count_all(${1:'${2:table_name}'});
+     """
+
+  'Codeigniter DB Count All Results':
+    'prefix':'cidbcountar'
+    'body': """
+      ${1:\$this->db}->count_all_results(${2:'${3:table_name}'});
+     """

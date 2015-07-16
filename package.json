@@ -1,0 +1,19 @@
+{
+  "name": "codeigniter-atom",
+  "version": "0.1.0",
+  "description": "Codeigniter Snippets for Atom",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "codeigniter-atom:toggle"
+  },
+  "repository": "https://github.com/roverwire/codeigniter-atom",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/roverwire/codeigniter-atom/issues"
+  },
+  "homepage": "https://github.com/roverwire/codeigniter-atom"
+}

@@ -1,0 +1,18 @@
+'.source.php':
+  'Codeigniter Set Cookie':
+    'prefix':'cisetcookie'
+    'body': """
+      set_cookie(${1:\$name}${2:, ${3:\$value}, ${4:\$expire}, ${5:\$domain}, ${6:\$path}, ${7:\$prefix}, ${8:\$secure}});
+     """
+
+  'Codeigniter Get Cookie':
+    'prefix':'cisetcookie'
+    'body': """
+      get_cookie(${1:'${2:cookie}'}${3:, ${4:TRUE}});
+     """
+
+  'Codeigniter Delete Cookie':
+    'prefix':'cideletecookie'
+    'body': """
+      delete_cookie(${1:\$name}${2:, ${3:\$domain}, ${4:\$path}, ${5:\$prefix}});
+     """
