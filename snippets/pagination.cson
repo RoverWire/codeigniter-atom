@@ -1,0 +1,42 @@
+'.source.php':
+   'Create Pagination Links':
+      'prefix': 'cicreatelinks'
+      'body': '''
+      \$this->pagination->create_links();
+              '''
+   'Pagination Initialize':
+      'prefix': 'cipageinitialize':
+         'body': '''
+         \$this->pagination->initialize(${1:\$config});
+                 '''
+
+      'Create Pagination Rules':
+         'prefix': 'cicreatepagination'
+         'body': '''
+         $config = [
+            'base_url' => 'base_url('Your-URL')',
+            'per_page' => \$item_per_page,
+            'total_rows' => \$total_db_rows,
+            'num_links' => \$number_of_pagination_links,
+            'first_tag_open' => '<li>',
+            'first_link' => 'First Page',
+            'first_tag_close' => '</li>',
+            'last_tag_open' => '<li>',
+            'last_link' => 'Last Page',
+            'last_tag_close' => '</li>',
+            'cur_tag_open' => '<li class=`active`><a>',
+            'cur_tag_close' => '</a></li>',
+            'num_tag_open' => '<li>',
+            'num_tag_close' => '</li>',
+            'prev_tag_open' => '<li>',
+            'prev_link' => 'Previous Page',
+            'prev_tag_close' => '</li>',
+            'next_tag_open' => '<li>',
+            'next_link' => 'Next Page',
+            'next_tag_close' => '</li>'
+            'enable_query_strings' => 'true'
+            'use_page_numbers' => 'true',
+            'page_query_string' => 'per_page',
+
+         ]
+                 '''

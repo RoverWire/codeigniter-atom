@@ -2,14 +2,53 @@
   'Codeigniter Git Ignore':
     'prefix':'cigitignore'
     'body': '''
-             */config/development
-             */config/testing
-             */config/production
-             */logs/log-*.php
-             */logs/!index.html
-             */cache/*
-             */cache/!index.html
-             */cache/!.htaccess
-             **/.DS_Store
-             **/Thumbs.db
+            */config/development
+            */config/testing
+            */config/production
+            */logs/log-*.php
+            */logs/!index.html
+            */cache/*
+            */cache/!index.html
+            */cache/!.htaccess
+            **/.DS_Store
+            **/Thumbs.db
+
+            .DS_Store
+
+            application/cache/*
+            !application/cache/index.html
+
+            application/logs/*
+            !application/logs/index.html
+
+            !application/*/.htaccess
+
+            composer.lock
+
+            user_guide_src/build/*
+            user_guide_src/cilexer/build/*
+            user_guide_src/cilexer/dist/*
+            user_guide_src/cilexer/pycilexer.egg-info/*
+            /vendor/
+
+            # IDE Files
+            #-------------------------
+            /nbproject/
+            .idea/*
+
+            ## Sublime Text cache files
+            *.tmlanguage.cache
+            *.tmPreferences.cache
+            *.stTheme.cache
+            *.sublime-worskpace
+            *.sublime-project
+            /tests/tests/
+            /tests/results/
+
+            #framework docs
+            user_guide/*
+
+            #database and security
+            application/config/config.php
+            application/config/database.php
             '''
