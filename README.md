@@ -15,6 +15,7 @@ This is an Atom version of my "Codeigniter Utilities" package that I made for Su
   - FTP
   - Input
   - Loader
+  - Pagination
 
 - Partial snippets for Libraries:
   - Encryption
