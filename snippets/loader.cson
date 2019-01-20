@@ -59,3 +59,8 @@
     'body': '''
             \$this->load->view(${1:'${2:view_name}'}${3:, ${4:\$data}${5:, ${6:TRUE}}});
             '''
+   'Load Pagination':
+      'prefix': 'ciloadpagination'
+      'body':'''
+      \$this->load->library(${1:'${2:pagination}'});
+      '''
