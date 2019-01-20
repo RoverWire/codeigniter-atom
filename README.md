@@ -1,3 +1,7 @@
+[![apm](https://img.shields.io/apm/l/codeigniter-utilities.svg?style=flat-square)](https://atom.io/packages/codeigniter-utilities)
+[![apm](https://img.shields.io/apm/v/codeigniter-utilities.svg?style=flat-square)](https://atom.io/packages/codeigniter-utilities)
+[![apm](https://img.shields.io/apm/dm/codeigniter-utilities.svg?style=flat-square)](https://atom.io/packages/codeigniter-utilities)
+
 # Codeigniter Snippets for Atom
 This is an Atom version of my "Codeigniter Utilities" package that I made for Sublime Text. All the triggers begin with "ci" to avoid conflicts with other snippets.
 
